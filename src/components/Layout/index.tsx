@@ -11,8 +11,6 @@ const Layout: React.FC = () => {
         {/* <MenuBar /> */}
         <Main />
 
-        {/* minuto 26 */}
-
         {/* <SideBar /> */}
       </Wrapper>
     </Container>
