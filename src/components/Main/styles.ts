@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   ArrowLeft,
   Home,
@@ -69,12 +69,52 @@ export const ProfileInfo = styled.div`
   }
 `;
 
-export const BottomMenu = styled.div``;
+export const BottomMenu = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
 
-export const HomeIcon = styled(Home)``;
+  background: var(--primary);
+  width: 100%;
+  border-top: 1px solid var(--outline);
 
-export const SearchIcon = styled(Search)``;
+  display: flex;
+  justify-content: space-between;
 
-export const BellIcon = styled(Notifications)``;
+  padding: 8px min(46px, max(10vw, 10px));
 
-export const EmailIcon = styled(Email)``;
+  @media (min-width: 500px) {
+    display: none;
+  }
+`;
+
+const iconCSS = css`
+  width: 31px;
+  height: 31px;
+
+  cursor: pointer;
+
+  fill: var(--gray);
+
+  &:hover,
+  &.active {
+    fill: var(--twitter);
+  }
+`;
+
+export const HomeIcon = styled(Home)`
+  ${iconCSS}
+`;
+
+export const SearchIcon = styled(Search)`
+  ${iconCSS}
+`;
+
+export const BellIcon = styled(Notifications)`
+  ${iconCSS}
+`;
+
+export const EmailIcon = styled(Email)`
+  ${iconCSS}
+`;

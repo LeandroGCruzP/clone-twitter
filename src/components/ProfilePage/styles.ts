@@ -1,0 +1,17 @@
+import styled from 'styled-components';
+
+export const Container = styled.div`
+  background: var(--primary);
+`;
+
+export const Banner = styled.div``;
+
+export const Avatar = styled.div``;
+
+export const ProfileData = styled.div``;
+
+export const LocationIcon = styled.div``;
+
+export const CakeIcon = styled.div``;
+
+export const Followage = styled.div``;
