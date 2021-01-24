@@ -6,7 +6,6 @@ import {
   Email,
   FavoriteBorder,
   Person,
-  ExitToApp,
   Rocketseat,
 } from '../../styles/icons';
 
