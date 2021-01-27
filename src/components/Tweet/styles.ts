@@ -15,6 +15,12 @@ export const Container = styled.div`
   &:last-child {
     margin-bottom: 46px;
   }
+
+  @media (min-width: 500px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const Retweeted = styled.div`
