@@ -11,6 +11,10 @@ export const Container = styled.div`
   border-bottom: 1px solid var(--outline);
 
   max-width: 100%;
+
+  &:last-child {
+    margin-bottom: 46px;
+  }
 `;
 
 export const Retweeted = styled.div`
